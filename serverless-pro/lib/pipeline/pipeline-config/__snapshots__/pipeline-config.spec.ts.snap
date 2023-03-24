@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pipeline-config should return the correct config for feature-dev 1`] = `
+{
+  "client": {
+    "bucketName": "serverless-pro-client-feature-dev-bucket",
+  },
+  "env": {
+    "account": "111111111111",
+    "region": "eu-west-1",
+  },
+  "shared": {
+    "domainCertificateArn": "arn:aws:acm:us-east-1:111111111111:certificate/3c0a6045-5e85-45c1-8749-74e87b1e6017",
+    "domainName": "your-domain.co.uk",
+  },
+  "stageName": "featureDev",
+  "stateful": {
+    "assetsBucketName": "serverless-pro-lg-feature-dev-canary-bucket",
+    "bucketName": "serverless-pro-lg-feature-dev-bucket",
+  },
+  "stateless": {
+    "canaryNotificationEmail": "your.email@gmail.com",
+    "lambdaMemorySize": 128,
+  },
+}
+`;
+
+exports[`pipeline-config should return the correct config for prod 1`] = `
+{
+  "client": {
+    "bucketName": "serverless-pro-client-prod-bucket",
+  },
+  "env": {
+    "account": "333333333333",
+    "region": "eu-west-1",
+  },
+  "shared": {
+    "domainCertificateArn": "arn:aws:acm:us-east-1:111111111111:certificate/3c0a6045-5e85-45c1-8749-74e87b1e6017",
+    "domainName": "your-domain.co.uk",
+  },
+  "stageName": "prod",
+  "stateful": {
+    "assetsBucketName": "serverless-pro-lg-prod-canary-bucket",
+    "bucketName": "serverless-pro-lg-prod-bucket",
+  },
+  "stateless": {
+    "canaryNotificationEmail": "your.email@gmail.com",
+    "lambdaMemorySize": 1024,
+  },
+}
+`;
+
+exports[`pipeline-config should return the correct config for staging 1`] = `
+{
+  "client": {
+    "bucketName": "serverless-pro-client-staging-bucket",
+  },
+  "env": {
+    "account": "222222222222",
+    "region": "eu-west-1",
+  },
+  "shared": {
+    "domainCertificateArn": "arn:aws:acm:us-east-1:111111111111:certificate/3c0a6045-5e85-45c1-8749-74e87b1e6017",
+    "domainName": "your-domain.co.uk",
+  },
+  "stageName": "staging",
+  "stateful": {
+    "assetsBucketName": "serverless-pro-lg-staging-canary-bucket",
+    "bucketName": "serverless-pro-lg-staging-bucket",
+  },
+  "stateless": {
+    "canaryNotificationEmail": "your.email@gmail.com",
+    "lambdaMemorySize": 1024,
+  },
+}
+`;
